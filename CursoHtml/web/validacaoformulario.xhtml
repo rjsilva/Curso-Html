@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Validação JavasScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Descrition" content="formulario com validacao javascript"/>
+        <meta name="Keywords" content="javascript, validacao"/>
+        <style type="text/css">
+            .divgeral{
+                margin-left: auto;
+                margin-right: auto;
+                background-color: cadetblue;
+                width: 500px;
+                height: 500px;
+                display:table;
+            }
+            .divformulario{
+
+                padding-top: 20px;
+                margin-left: 130px;
+            }
+            input[type=submit]{
+                
+                margin-left:80px;
+            }
+        </style>
+        <script type="text/javascript">
+            function validaLogin(){
+                
+                if(document.getElementById('nome').value == "" || document.getElementById('senha').value == ""){
+                    
+                    alert("favor preencher os campos");
+                    return false;
+                    
+                }else{
+                    
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="divgeral">
+            <div class="divformulario">
+                <form onsubmit="return validaLogin();">
+                    Nome:<input type="text" id="nome" name="nome"/><br/><br/>
+                    Senha:<input type="password" id="senha" name="senha"/><br/><br/>
+                    <input type="submit" id="enviar" value="Enviar"/>
+                    <input type="reset" id="limpar" value="Limpar"/>
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>

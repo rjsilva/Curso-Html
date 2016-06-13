@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Tag Div</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Description" content="tag div para uso sem tabelas"/>
+        <meta name="Keywords" content="tag, div"/>
+        <style type="text/css">
+            .divgeral{
+                width: 900px;
+                height: 500px;
+                background-color: darkcyan;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .div01{
+                width: 900px;
+                height: 240px;
+                background-color:black;
+                color:white;
+            }
+            .div02{
+                width: 900px;
+                height: 250px;
+                background-color: burlywood;
+                color: black;
+            }
+            .div01, p {
+                padding-top: 10px;
+            }
+            .div02, p {
+                padding-top: 10px;
+            }
+            /*alinhamento de DIV */
+            .divcentral{
+                background-color:crimson;
+                width:900px;
+                height:400px;
+                margin-left: auto;
+                margin-right: auto;
+                display:table;
+                margin-top: 20px;
+                padding-top:20px;
+            }
+            .divesquerda{
+                width:450px;
+                height:400px;
+                background:darkgreen;
+                float: left;
+            }
+            .divdireita{
+                
+                width:450px;
+                height:400px;
+                background-color: orange;
+                float:right;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="divgeral">
+            <div class="div01">
+                <p>texto01 texto01 texto01 texto01 texto01 texto01 texto01 texto01 
+                    texto01 texto01 texto01 texto01 texto01 texto01 texto01 texto01 texto01</p>
+            </div>
+            <div class="div02">
+                <p>texto02 texto02 texto02 texto02 texto02 texto02 texto02 texto02 texto02
+                    texto02 texto02 texto02 texto02 texto02 texto02 texto02 texto02 texto02 texto02</p>
+            </div>
+        </div>
+        <div class="divcentral">
+            <p>div central</p>
+            <div class="divesquerda">
+                DIV ESQUERDA
+            </div>
+            <div class="divdireita">
+                DIV DIREITA
+            </div>
+        </div>
+    </body>
+</html>
